@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Dodajemo link na vanjski CSS fajl -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <!-- Forma za slanje podataka o prijavi -->
+        <form action="login_process.php" method="POST">
+            <!-- Polje za unos korisničkog imena -->
+            Username: <input type="text" name="username" required><br>
+            <!-- Polje za unos lozinke -->
+            Password: <input type="password" name="password" required><br>
+            <!-- Dugme za slanje podataka o prijavi -->
+            <input type="submit" value="Login">
+        </form>
+        <!-- Poruka i link za registraciju -->
+        <p>Don't have an account? <a href="register.php" style="color: white;">Register here</a>.</p>
+    </div>
+</body>
+</html>

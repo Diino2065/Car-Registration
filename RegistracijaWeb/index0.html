@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definisanje karakternog seta i viewport-a za responzivnost -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Naslov stranice -->
+    <title>Login Page</title>
+    <!-- Povezivanje sa vanjskim CSS fajlom za stilizaciju -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <!-- Forma za slanje podataka na login_process.php putem POST metode -->
+        <form action="login_process.php" method="POST">
+            <!-- Polje za unos korisničkog imena -->
+            Username: <input type="text" name="username" required><br>
+            <!-- Polje za unos lozinke -->
+            Password: <input type="password" name="password" required><br>
+            <!-- Dugme za slanje podataka -->
+            <input type="submit" value="Login">
+        </form>
+        <!-- Poruka i link za registraciju -->
+        <p>Don't have an account? <a href="register.php" style="color: white;">Register here</a>.</p>
+    </div>
+</body>
+</html>
